@@ -2,7 +2,11 @@
 module.exports = {
   content: ["../resources/templates/**/*.{html,js}"], // it will be explained later
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        syne: ['"Syne"', "sans-serif"],
+      },
+    },
   },
   plugins: [],
 };
