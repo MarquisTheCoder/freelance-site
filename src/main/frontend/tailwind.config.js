@@ -6,6 +6,9 @@ module.exports = {
       fontFamily: {
         syne: ['"Syne"', "sans-serif"],
       },
+      backgroundColor: {
+        primary: ["##F8F8F8"],
+      },
     },
   },
   plugins: [],
