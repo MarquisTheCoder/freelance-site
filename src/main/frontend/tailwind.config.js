@@ -12,7 +12,7 @@ module.exports = {
         open: ["Open Sans", "helvetica"],
       },
       backgroundColor: {
-        primary: ["##F8F8F8"],
+        primary: ["#F8F8F8"],
       },
     },
   },
