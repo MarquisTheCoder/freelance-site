@@ -3,7 +3,7 @@
   <header
     th:fragment="header"
     id="header"
-    class="flex-col bg-[#F8F8F8] h-[80vh] w-screen"
+    class="flex-col bg-black h-[80vh] w-screen"
     role="banner"
   >
     <section
@@ -11,10 +11,10 @@
       class="flex items-center content-center w-screen"
       role="banner-container"
     >
-      <div
-        class="flex-col justify-center items-center w-screen pt-28 text-center"
-      >
-        <div class="flex justify-center items-center text-center pb-11">
+      <div class="flex-col justify-center items-center w-screen text-center">
+        <div
+          class="flex justify-center items-center text-center pt-28 pb-11 shrink-0"
+        >
           <a href="" class="text-orange-600/90 font-syne text-4xl text-center">
             MARQUISTHECODER
           </a>
@@ -22,23 +22,24 @@
           <a class="language text-sm font-syne text-black/80" href="#">EN</a>
         </div>
         <span class="font-thin text-orange-600/50">___________</span>
-      </div>
 
-      <div>
-        <h1 class="text-6xl font-arimo">Do you want a professional website?</h1>
-      </div>
+        <div class="w-screen shrink-0">
+          <h1 class="text-7xl font-arimo text-[#42464A] pt-11">
+            Do you need a website?
+          </h1>
+        </div>
 
-      <div class="hidden">
-        <ul class="language-menu">
-          <li class="language-menu-item">English (EN)</li>
-          <li class="language-menu-item">Español (ES)</li>
-          <li class="language-menu-item">Thai (THA)</li>
-          <li class="language-menu-item">Portugal (BR)</li>
-          <li class="language-menu-item">Italiano (IT)</li>
-          <li></li>
-        </ul>
+        <div class="hidden">
+          <ul class="language-menu">
+            <li class="language-menu-item">English (EN)</li>
+            <li class="language-menu-item">Español (ES)</li>
+            <li class="language-menu-item">Thai (THA)</li>
+            <li class="language-menu-item">Portugal (BR)</li>
+            <li class="language-menu-item">Italiano (IT)</li>
+            <li></li>
+          </ul>
+        </div>
       </div>
-
       <div></div>
       <div></div>
     </section>
