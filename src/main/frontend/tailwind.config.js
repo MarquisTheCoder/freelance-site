@@ -6,6 +6,7 @@ module.exports = {
       fontFamily: {
         syne: ["Syne", "sans-serif"],
         arimo: ["Arimo", "helvetica"],
+        open: ["Open Sans", "helvetica"],
       },
       backgroundColor: {
         primary: ["##F8F8F8"],
