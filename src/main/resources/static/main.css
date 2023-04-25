@@ -565,13 +565,13 @@ video {
   padding: 5rem;
 }
 
+.font-syne {
+  font-family: Syne;
+}
+
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
-}
-
-.font-semibold {
-  font-weight: 600;
 }
 
 .text-orange-700\/50 {
