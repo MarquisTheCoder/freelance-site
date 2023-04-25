@@ -528,6 +528,10 @@ video {
   display: flex;
 }
 
+.hidden {
+  display: none;
+}
+
 .h-\[80vh\] {
   height: 80vh;
 }
@@ -557,7 +561,19 @@ video {
   padding: 0px;
 }
 
-.text-blue-600 {
-  --tw-text-opacity: 1;
-  color: rgb(37 99 235 / var(--tw-text-opacity));
+.p-20 {
+  padding: 5rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.text-orange-700\/50 {
+  color: rgb(194 65 12 / 0.5);
 }

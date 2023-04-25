@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        syne: ['"Syne"', "sans-serif"],
+        syne: ["Syne"],
       },
       backgroundColor: {
         primary: ["##F8F8F8"],
