@@ -2,6 +2,9 @@
 module.exports = {
   content: ["../resources/templates/**/*.{html,js}"], // it will be explained later
   theme: {
+    screens: {
+      xs: "475px",
+    },
     extend: {
       fontFamily: {
         syne: ["Syne", "sans-serif"],
