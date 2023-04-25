@@ -676,3 +676,10 @@ video {
 .text-violet-950\/80 {
   color: rgb(46 16 101 / 0.8);
 }
+
+@media (min-width: 475px) {
+  .xs\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
