@@ -3,7 +3,7 @@
   <main th:fragment="main" id="main" class="main" role="main">
     <section
       id="quote-advertisement"
-      class="quote-advertisment flex-col items-center content-center w-[100vh] h-[80vh]"
+      class="quote-advertisment flex-col items-center content-center h-fit min-h-screen"
       role="advertisment"
     >
       <div class="flex justify-center w-[100vw]">
@@ -27,6 +27,7 @@
         <img class="mx-auto" th:src="@{imgs/site_map_2.png}" alt="" />
         </div>
       </div>
+
        <div class="flex justify-center w-screen pt-8 pb-10">
             <input
               type="text"
@@ -39,6 +40,13 @@
             > 
               GET FREE QUOTE
             </button>
+    </section>
+
+    <section id="who-is-marquis" class="who-is-marquis h-[80vh] bg-[#f8f8f8]" role="introducing-myself">
+      <div class="flex gap-16">
+        <div class="introduction flex-col"></div>
+        <div class="h-max"></div>
+      </div>
     </section>
   </main>
 </html>
