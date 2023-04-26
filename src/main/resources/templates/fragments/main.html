@@ -1,4 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-  <main th:fragment="main" id="main" class="" role="main"></main>
+  <main th:fragment="main" id="main" class="main" role="main">
+    <section
+      id="quote-advertisement"
+      class="quote-advertisment flex-col items-center content-center w-[100vh] h-[80vh]"
+      role="advertisment"
+    >
+      <div class="flex-col pt-24">
+        <h1
+          class="text-center text-white font-open font-bold text-4xl max-w-4xl mx-auto"
+        >
+          Are You Using Google Ads? Try Our FREE Ads Grader!
+        </h1>
+
+        <h2 class="text-center mx-auto pt-5 pb-14">
+          Stop wasting money and unlock the hidden potential of your
+          advertising.
+        </h2>
+      </div>
+      <img class="mx-auto" th:src="@{imgs/site_map_2.png}" alt="" />
+    </section>
+  </main>
 </html>
