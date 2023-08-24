@@ -31,16 +31,19 @@
       </div>
     </div>
 
-    <div class="flex justify-center w-screen pt-8 pb-48">
+    <div class="flex justify-center w-screen pt-14 pb-48">
       <form action="/quote" method="get">
-        <div class="flex-col">
+        <div
+          class="flex gap-10"
+          style="display: flex; gap: 14px; flex-direction: column"
+        >
           <input
             type="text"
             placeholder="youremail@example.com"
-            class="border-none w-40 md:w-60 md:text-2xl text-xs md:text-xl"
+            class="border-none w-96 md:w-60 text-2xl md:text-xl h-14"
           />
           <button
-            class="bg-violet-950/70 py-2 px-3 text-white font-open font-bold hover:bg-white hover:text-violet-950/70"
+            class="bg-violet-950/70 py-2 px-3 text-white font-open font-bold hover:bg-white hover:text-violet-950/70 text-2xl h-14"
           >
             GENERATE A FREE ESTIMATE
           </button>
@@ -54,10 +57,10 @@
     class="who-is-marquis min-w-[100vh] min-h-[90vh] bg-[#f8f8f8]"
     role="introducing-myself"
   >
-    <div class="flex-col min-h-fit min-w-[100%]">
+    <div class="flex-col min-h-fit w-screen">
       <div class="introduction pt-32 flex-col min-h-[100%] min-w-[50%]">
         <div class="flex w-full justify-center py-10">
-          <h2 class="font-open font-light text-4xl">
+          <h2 class="font-open font-light text-4xl text-center">
             Who is <span class="font-bold">MarquisTheCoder</span>
           </h2>
         </div>
@@ -80,11 +83,11 @@
         </div>
       </div>
       <div class="min-h-[100%] min-w-[50%] relative">
-        <div class="h-auto w-full flex justify-center">
+        <div class="h-auto w-full flex justify-center pt-8">
           <img
             src="imgs/me_no_bg_2.png"
             alt="MarquisTheCoder"
-            class="h-auto w-[40vw] max-w-[60vw]"
+            class="h-auto w-[80vw] max-w-[80vw]"
           />
         </div>
       </div>
