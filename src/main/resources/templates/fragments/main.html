@@ -1,77 +1,93 @@
-
 <main th:fragment="main" id="main" class="main" role="main">
-    <section
-      id="quote-advertisement"
-      class="quote-advertisment flex-col items-center content-center h-fit min-h-screen bg-violet-950/70"
-      role="advertisment"
-    >
-      <div class="flex justify-center w-[100vw]">
-        <h1 class="text-center text-white font-open font-light text-xl md:text-4xl max-w-4xl pt-24">
-          Are You In Need Of A Developer?  
-          <span>
-            <a class="text-white font-open font-extrabold text-4xl hover:underline" href="#">Try a FREE Quote!</a> 
-          </span> 
-        </h1>
+  <section
+    id="quote-advertisement"
+    class="quote-advertisment flex-col items-center content-center h-fit min-h-screen bg-violet-950/70"
+    role="advertisment"
+  >
+    <div class="flex justify-center w-[100vw]">
+      <h1
+        class="text-center text-white font-open font-light text-xl md:text-4xl max-w-4xl pt-24"
+      >
+        Are You In Need Of A Developer?
+        <span>
+          <a
+            class="text-white font-open font-extrabold text-4xl hover:underline"
+            href="#"
+            >CONTACT NOW !</a
+          >
+        </span>
+      </h1>
+    </div>
+    <div class="flex justify-center w-[100vw]">
+      <h2
+        class="text-center mx-auto pb-12 font-open text-white/80 text-2xl pt-4"
+      >
+        Stop wasting money and unlock the hidden potential of your business.
+      </h2>
+    </div>
+    <div class="flex justify-center w-[100vw]">
+      <div class="w-[80vw]">
+        <img class="mx-auto" th:src="@{imgs/site_map_2.png}" alt="" />
       </div>
-      <div class="flex justify-center w-[100vw]">
-        <h2
-          class="text-center mx-auto  pb-12 font-open text-white/80 text-2xl pt-4">
-          Stop wasting money and unlock the hidden potential of your
-          business.
-        </h2>
-      </div>
-      <div class="flex justify-center w-[100vw] ">
-        <div class="w-[80vw]">
-          <img class="mx-auto" th:src="@{imgs/site_map_2.png}" alt="" />
+    </div>
+
+    <div class="flex justify-center w-screen pt-8 pb-48">
+      <form action="/quote" method="get">
+        <div class="flex-col">
+          <input
+            type="text"
+            placeholder="youremail@example.com"
+            class="border-none w-40 md:w-60 md:text-2xl text-xs md:text-xl"
+          />
+          <button
+            class="bg-violet-950/70 py-2 px-3 text-white font-open font-bold hover:bg-white hover:text-violet-950/70"
+          >
+            GENERATE A FREE ESTIMATE
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section
+    id="who-is-marquis"
+    class="who-is-marquis min-w-[100vh] min-h-[90vh] bg-[#f8f8f8]"
+    role="introducing-myself"
+  >
+    <div class="flex-col min-h-fit min-w-[100%]">
+      <div class="introduction pt-32 flex-col min-h-[100%] min-w-[50%]">
+        <div class="flex w-full justify-center py-10">
+          <h2 class="font-open font-light text-4xl">
+            Who is <span class="font-bold">MarquisTheCoder</span>
+          </h2>
+        </div>
+        <div class="flex justify-center">
+          <p class="text-center px-10 font-thin font-open text-[1.2rem] pb-10">
+            He is a seasoned Full-Stack Developer based out of San Antonio, TX.
+            With a stark passion for development and design MarquisTheCoder has
+            displayed technical and creative prowess for numerour clients and
+            projects. If you want the best service quickly with transparency and
+            ease throughout the process of getting your website out to the
+            public Marquis is the guy for you. Professionalism first.
+          </p>
+        </div>
+        <div class="flex w-full justify-center">
+          <button
+            class="bg-violet-900/70 text-white px-4 py-3 font-open font-bold"
+          >
+            YES, I WANT TO WORK WITH MARQUIS
+          </button>
         </div>
       </div>
-
-      <div class="flex justify-center w-screen pt-8 pb-48">
-        <form action="" method="post">
-            <input
-              type="text"
-              placeholder="youremail@example.com"
-              class="border-none w-40 md:w-60 md:text-2xl text-xs md:text-xl"
-            />
-            <button
-              
-              class="bg-violet-950/70 py-2 px-3 text-white 
-              font-open font-bold hover:bg-white
-               hover:text-violet-950/70" 
-            > 
-              GET A FREE QUOTE
-            </button>
-
-        </form>
-              </section>
-
-    <section id="who-is-marquis" class="who-is-marquis min-w-[100vh] min-h-[90vh] bg-[#f8f8f8]" role="introducing-myself">
-
-      <div class="flex-col min-h-fit min-w-[100%] ">
-
-        <div class="introduction pt-32 flex-col min-h-[100%] min-w-[50%] ">
-
-            <div class="flex w-full justify-center py-10">
-
-            <h2 class="font-open font-light text-4xl"> Who is <span class="font-bold">MarquisTheCoder</span></h2>
-            </div>
-            <div class="flex justify-center">
-              <p class="text-center px-10 font-thin font-open text-[1.2rem] pb-10">
-                He is a seasoned Full-Stack Developer based out of San Antonio, TX. With a stark passion for development and 
-              design MarquisTheCoder has displayed technical and creative prowess for numerour clients and projects. If you want the best service quickly with transparency and ease throughout the process of getting your website out to the public Marquis is the guy for you. Professionalism first. </p> 
-            </div>
-            <div class="flex w-full justify-center">
-
-              <button class="bg-violet-900/70 text-white px-4 py-3 font-open font-bold">YES, I WANT TO WORK WITH MARQUIS</button>
-
-            </div>
-        </div>
-
-        <div class="min-h-[100%] min-w-[50%] relative">
-          <div class="h-auto w-full flex justify-center">
-            <img src="imgs/me_no_bg_2.png" alt="MarquisTheCoder" class="h-auto w-[40vw] max-w-[60vw]">
-          </div>
+      <div class="min-h-[100%] min-w-[50%] relative">
+        <div class="h-auto w-full flex justify-center">
+          <img
+            src="imgs/me_no_bg_2.png"
+            alt="MarquisTheCoder"
+            class="h-auto w-[40vw] max-w-[60vw]"
+          />
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 </main>

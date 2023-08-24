@@ -23,3 +23,9 @@
 
   <link th:href="@{/main.css}" rel="stylesheet" />
 </head>
+
+<body class="p-0 m-0 box-border">
+  <header th:replace="~{quoteFragments/quoteHeader :: header}"></header>
+  <main th:replace="~{quoteFragments/quoteMain :: main}"></main>
+  <footer th:replace="~{quoteFragments/quoteFooter :: footer}"></footer>
+</body>

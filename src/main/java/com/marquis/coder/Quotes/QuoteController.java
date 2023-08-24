@@ -5,8 +5,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class QuoteController {
-    @GetMapping("/quotes")
+
+    @GetMapping("/quote")
     public static String quotes(){
-        return "quotes";
+        return "quote";
     }
 }
