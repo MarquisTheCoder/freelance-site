@@ -59,11 +59,11 @@
 
 	<build>
 		<plugins>
-			<plugin>
+			<!-- <plugin>
 				<groupId>com.maciejwalkowiak.paseq</groupId>
 				<artifactId>paseq-maven-plugin</artifactId>
 				<version>0.1.1</version>
-				<!-- configuration for building the package -->
+				configuration for building the package
 				<executions>
 					<execution>
 						<phase>compile</phase>
@@ -88,7 +88,7 @@
 						</configuration>
 					</execution>
 				</executions>
-			</plugin>
+			</plugin> -->
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
