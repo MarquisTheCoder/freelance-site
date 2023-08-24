@@ -612,8 +612,8 @@ video {
   max-width: 56rem;
 }
 
-.max-w-\[40vw\] {
-  max-width: 40vw;
+.max-w-\[60vw\] {
+  max-width: 60vw;
 }
 
 .max-w-xs {
