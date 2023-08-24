@@ -3,7 +3,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>MarquisTheCoder - #1 web developer in San Antonio texas! Consultant</title>
+  <title>
+    MarquisTheCoder - #1 web developer in San Antonio texas! Consultant
+  </title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,7 +14,10 @@
     href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&family=Open+Sans:wght@300&family=Syne&display=swap"
     rel="stylesheet"
   />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;800&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;800&display=swap"
+    rel="stylesheet"
+  />
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
 
@@ -20,7 +25,7 @@
 </head>
 
 <body class="p-0 m-0 box-border">
-  <header th:replace="fragments/header :: header"></header>
-  <main th:replace="fragments/main :: main"></main>
-  <footer th:replace="fragments/footer :: footer"></footer>
+  <header th:replace="~{fragments/header :: header}"></header>
+  <main th:replace="~{fragments/main :: main}"></main>
+  <footer th:replace="~{fragments/footer :: footer}"></footer>
 </body>
