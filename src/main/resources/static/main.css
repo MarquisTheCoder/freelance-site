@@ -584,6 +584,10 @@ video {
   width: 100vw;
 }
 
+.w-\[400px\] {
+  width: 400px;
+}
+
 .w-\[80vw\] {
   width: 80vw;
 }
