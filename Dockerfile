@@ -1,14 +1,11 @@
-# Fetching latest version of Java
-FROM openjdk:17
+FROM eclipse-temurin:17-jdk-focal
  
-# # Setting up work directory
-# WORKDIR /app
-VOLUME /freelance-site
-# Copy the jar file into our app
-COPY target/*.jar app.jar
-
-# Exposing port 8080
-EXPOSE 8080
-
-# Starting the application
-CMD ["java", "-jar", "spring-0.0.1-SNAPSHOT.jar"]
+WORKDIR /app
+ 
+COPY .mvn/ .mvn
+COPY mvnw pom.xml ./
+RUN ./mvnw dependency:go-offline
+ 
+COPY src ./src
+ 
+CMD ["./mvnw", "spring-boot:run"]
