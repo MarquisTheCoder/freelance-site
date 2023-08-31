@@ -3,7 +3,7 @@ FROM openjdk:17
  
 # # Setting up work directory
 # WORKDIR /app
-VOLUME /tmp
+VOLUME /freelance-site
 # Copy the jar file into our app
 COPY target/*.jar app.jar
 
