@@ -10,9 +10,19 @@
     ></script>
 
     <script>
+      $(".contact-button").each(function (index, contactButton) {
+        $(contactButton).on("click", function () {
+          $("input").each(function (index, formInput) {
+            $(formInput).val("");
+          });
+        });
+      });
+
       $(".contact-form").each(function (index, contactForm) {
         $(contactForm).submit(function (event) {
           event.preventDefault();
+
+          //send form data
           $.ajax({
             // please do not spam me :(
             // just making a living here :)
