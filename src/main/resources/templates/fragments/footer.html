@@ -1,7 +1,28 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
   <footer th:fragment="footer" id="footer" class="" role="footer">
-    <script type="text/javascript" th:src="@{/js/src/main.js}" />
-    <script type="text/javascript" th:src="@{/js/src/language.js}"/>
+    <script type="text/javascript" th:src="@{/js/src/main.js}"></script>
+    <script type="text/javascript" th:src="@{/js/src/language.js}"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $(".contact-form").each(function (index, contactForm) {
+        $(contactForm).submit(function (event) {
+          event.preventDefault();
+          $.ajax({
+            url: "https://getform.io/f/bdc844c5-eac1-4231-81df-1f623a4fb518",
+            type: "post",
+            data: $(contactForm).serialize(),
+            success: function () {
+              // Whatever you want to do after the form is successfully submitted
+            },
+          });
+        });
+      });
+    </script>
   </footer>
 </html>
